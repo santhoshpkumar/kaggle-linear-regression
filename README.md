@@ -1,5 +1,8 @@
 # Understanding Linear Regression
 
+[//]: # (Image References)
+[imageLieuCommData]: ./images/star-trek-discovery-brent-spiner-data.gif
+
 Maximum learning is achived by pratical expirementation. Theory helps get a grasp, but nothing is more satisfying as coding the theory in your favorite language and see it work. That magician feeling. In this blog I will go through a simple concept of Regression and to be specific disuss about Simple linear regression. 
 
 There are several packages in every possible programming languages and productive appplications which abstact the concept and get straight to the result. These packages and plugins do such a good job sometimes it is hard to get a full grasp of the algorithms that does the magic under the hood.
@@ -16,6 +19,8 @@ Using this dataset we will now implement the simple linear regression algorithm 
 Lets find a new relation, I mean a linear realtionship between our beloved X and Y. We want to find a straight line relationship between the X (independent variable) and Y (depenent variable). This is called simple linear regression where we are tyring to find what linear combination of X (input) will produce Y (output) 
 
 ## Lieutenant Commander Data
+
+![Lieutenant Commander Data][imageLieuCommData]
 
 No not that Data. Here is our data from kaggle.
 
