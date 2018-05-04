@@ -23,8 +23,7 @@ No not that Data. Here is our data from kaggle.
 
 Our aim is to find a straight line that connects all the data point.
 
-<img src="./images/star-trek-discovery-brent-spiner-data.gif" width="200">
-Straight line you say?
+<img src="./images/star-trek-discovery-brent-spiner-data.gif" width="200"> Straight line you say?
 
 Well intuitly you can see that it is mission impossbile to find a straight line that goes through all the points. We will find a approximate line that is respresentative of all the points hugging the line.
 
