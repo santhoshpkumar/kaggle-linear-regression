@@ -1,8 +1,5 @@
 # Understanding Linear Regression
 
-[//]: # (Image References)
-[imageLieuCommData]: ./images/star-trek-discovery-brent-spiner-data.gif
-
 Maximum learning is achived by pratical expirementation. Theory helps get a grasp, but nothing is more satisfying as coding the theory in your favorite language and see it work. That magician feeling. In this blog I will go through a simple concept of Regression and to be specific disuss about Simple linear regression. 
 
 There are several packages in every possible programming languages and productive appplications which abstact the concept and get straight to the result. These packages and plugins do such a good job sometimes it is hard to get a full grasp of the algorithms that does the magic under the hood.
@@ -20,15 +17,15 @@ Lets find a new relation, I mean a linear realtionship between our beloved X and
 
 ## Lieutenant Commander Data
 
-![Lieutenant Commander Data][imageLieuCommData]
+<img src="./images/star-trek-discovery-brent-spiner-data.jpg" width="200">
 
 No not that Data. Here is our data from kaggle.
 
-
 Our aim is to find a straight line that connects all the data point.
 
+<img src="./images/star-trek-discovery-brent-spiner-data.gif" width="200">
 Straight line you say?
 
-Well intuitly you can see that it is mission impossbile to find a straight line that goes throught all the points. We will find a approximate line that is respresentative of all the points hugging the line.
+Well intuitly you can see that it is mission impossbile to find a straight line that goes through all the points. We will find a approximate line that is respresentative of all the points hugging the line.
 
 Lets begin with the equation of a straight line.
