@@ -6,20 +6,19 @@ There are several packages in every possible programming languages and productiv
 
 This blog is an attempt to uncover the working of the linear regression. We will consider the simplest dumbest data and produce a simple linear regression model and in the process decode its inner working.
 
-We will consider the kaggle data set found here. 
-https://www.kaggle.com/andonians/random-linear-regression
+The dataset we will be using http://wiki.csc.calpoly.edu/datasets/attachment/wiki/Houses/RealEstate.csv?format=raw from the wiki.csc.calpoly.edu. The data is quite old but for illustration purposes, it should be fine.
 
 Using this dataset we will now implement the simple linear regression algorithm from scratch in Python.
 
 ## The Plan
 
-Lets find a new relation, I mean a linear relationship between our beloved X and Y. We want to find a straight line relationship between the X (independent variable) and Y (dependent variable). This is called simple linear regression where we are trying to find what linear combination of X (input) will produce Y (output) 
+Let's begin by find a new relation, I mean a linear relationship between our beloved X and Y. We want to find a straight line relationship between the X (independent variable) and Y (dependent variable). This is called simple linear regression where we are trying to find what linear combination of X (input) will produce Y (output) 
 
 ## Lieutenant Commander Data
 
 <img src="./images/star-trek-discovery-brent-spiner-data.jpg" width="200">
 
-No not that Data. Here is our data from kaggle.
+No, not that Data. Here is our data plotted as scatter plot.
 
 <img src="./images/train_data.png" width="1000">
 
@@ -27,7 +26,7 @@ Our aim is to find a straight line that connects all the data point.
 
 <img src="./images/star-trek-discovery-brent-spiner-data.gif" width="200"> Straight line you say?
 
-Well intuitively you can see that it is <img src="./images/mission-impossible.jpg" height="50" width="100">  to find a straight line that goes through all the points. We will find a approximate line that is representative of all the points hugging the line.
+Well intuitively you can see that it is <img src="./images/mission-impossible.jpg" height="60" width="100">  to find a straight line that goes through all the points. We will find a approximate line that is representative of all the points hugging the line.
 
 <img src="./images/train_fit.png" width="1000">
 
