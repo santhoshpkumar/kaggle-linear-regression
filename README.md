@@ -40,23 +40,19 @@ where m is the coefficient of independent variable (slope) and c is the Y-interc
 **Slope**: a number measuring the steepness of a line relative to the x-axis.
 The slope of a line is usually calculated by dividing the amount of change in Y by the amount of change in X. The slope of the regression line can be calculated by dividing the covariance of X and Y by the variance of X.
 
-The mathematical formula to calculate slope (m) is:
-slope = covariance / variance  
+The mathematical formula to calculate slope (m) is: covariance / variance  
 
 **Covariance**: a measure of how much two variables change with respect to one another.
 
-The mathematical formula to calculate covariance is: 
-covariance = mean(x*y) - mean(x) * mean(y) 
+The mathematical formula to calculate covariance is: mean(x*y) - mean(x) * mean(y) 
 
 **Variance**: a statistic used to describe the spread of data about the mean.
 
-The mathematical formula to calculate variance is: 
-variance = mean( x^2) - mean (x)^2  
+The mathematical formula to calculate variance is:  mean( x^2) - mean (x)^2  
 
 **Y-intercept**: the point at which a line crosses the Y-axis.
 
-The formula to calculate intercept (c) is: 
-c = mean(y) – mean(x) * m  
+The formula to calculate intercept (c) is: mean(y) – mean(x) * m  
 
 Check the video link below for more information on the equation and derivation.
 
