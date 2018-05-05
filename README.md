@@ -107,7 +107,9 @@ R-squared is always between 0 and 100%:
 
 <img src="./images/r_sq_code.png" >
 
-Let's see how our custom built model fairs against the sklearn regression model output.
+### sklearn
+
+Let's see how our custom built model compares against the sklearn regression model output.
 
 <img src="./images/standard_lib_model.png" >
 
