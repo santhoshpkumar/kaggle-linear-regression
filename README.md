@@ -58,4 +58,4 @@ Check the video link below for more information on the equation and derivation.
 
 https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/more-on-regression/v/covariance-and-the-regression-line
 
-Now, let’s write a function for intercept and slope (coefficient):
+Now, let’s write a function to calculate intercept and slope (coefficient):
