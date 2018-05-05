@@ -59,3 +59,57 @@ Check the video link below for more information on the equation and derivation.
 https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/more-on-regression/v/covariance-and-the-regression-line
 
 Now, let’s write a function to calculate intercept and slope (coefficient):
+
+<img src="./images/variance.png" >
+
+<img src="./images/covariance.png" >
+
+<img src="./images/slope_intercept.png" >
+
+We will take these learnings and now build a model that can learn from the training data and predict the outcome for given test data.
+
+<img src="./images/simple_reg_model.png" >
+
+This is a very simple model, that demonstrate the working of simple linear regression.
+The 2 main functions are the fit and predict.
+
+Usage example:
+
+<img src="./images/model_usage.png" >
+
+Plotting the test predication vs the actaul test points.
+
+<img src="./images/test_fit.png" >
+
+Pictorial comparision of Y values in test and the Predicted values
+
+<img src="./images/predict.png" >
+
+## Evaulation
+
+Now that we have a model, we need a way evaualte or read the model. 
+
+### Root Mean Squared Error(RMSE)
+
+RMSE is the standard deviation of the residuals (prediction errors). Residuals are a measure of how far from the regression line data points are, and RMSE is a measure of how spread out these residuals are.
+
+Let’s define a function for RMSE:
+
+<img src="./images/rmse_code.png" >
+
+### R-squared
+
+R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination
+
+R-squared is always between 0 and 100%:
+
+0% indicates that the model explains none of the variability of the response data around its mean.
+100% indicates that the model explains all the variability of the response data around its mean.
+
+<img src="./images/r_sq_code.png" >
+
+Let's see how our custom built model fairs against the sklearn regression model output.
+
+<img src="./images/standard_lib_model.png" >
+
+<img src="./images/compare.png" >
