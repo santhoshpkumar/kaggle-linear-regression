@@ -82,6 +82,7 @@ Plotting the test predication vs the actaul test points.
 
 Pictorial comparision of Y values in test and the Predicted values
 
+<img src="./images/test_original.png" >
 <img src="./images/predict.png" >
 
 ## Evaulation
@@ -112,5 +113,9 @@ R-squared is always between 0 and 100%:
 Let's see how our custom built model compares against the sklearn regression model output.
 
 <img src="./images/standard_lib_model.png" >
+
+As you can see from the graph below, the regression line predicatd using our custom model overlaps with that of the library model. You can downlaod the ipython notebook and experiement with different datasets and see the results for yourself.
+
+https://github.com/santhoshpkumar/understanding-linear-regression
 
 <img src="./images/compare.png" >
