@@ -21,11 +21,15 @@ Lets find a new relation, I mean a linear relationship between our beloved X and
 
 No not that Data. Here is our data from kaggle.
 
+<img src="./images/train_data.png" width="1000">
+
 Our aim is to find a straight line that connects all the data point.
 
 <img src="./images/star-trek-discovery-brent-spiner-data.gif" width="200"> Straight line you say?
 
 Well intuitively you can see that it is <img src="./images/mission-impossible.jpg" height="50" width="100">  to find a straight line that goes through all the points. We will find a approximate line that is representative of all the points hugging the line.
+
+<img src="./images/train_fit.png" width="1000">
 
 Let's begin with the equation of a straight line.
 
