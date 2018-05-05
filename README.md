@@ -25,6 +25,6 @@ Our aim is to find a straight line that connects all the data point.
 
 <img src="./images/star-trek-discovery-brent-spiner-data.gif" width="200"> Straight line you say?
 
-Well intuitly you can see that it is mission impossbile to find a straight line that goes through all the points. We will find a approximate line that is respresentative of all the points hugging the line.
+Well intuitly you can see that it is <img src="./images/mission-impossible.jpg" height="50" width="100">  to find a straight line that goes through all the points. We will find a approximate line that is respresentative of all the points hugging the line.
 
 Lets begin with the equation of a straight line.
