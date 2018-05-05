@@ -28,3 +28,34 @@ Our aim is to find a straight line that connects all the data point.
 Well intuitively you can see that it is <img src="./images/mission-impossible.jpg" height="50" width="100">  to find a straight line that goes through all the points. We will find a approximate line that is representative of all the points hugging the line.
 
 Let's begin with the equation of a straight line.
+
+Y' = m*X + c   
+
+where m is the coefficient of independent variable (slope) and c is the Y-intercept.
+
+**Slope**: a number measuring the steepness of a line relative to the x-axis.
+The slope of a line is usually calculated by dividing the amount of change in Y by the amount of change in X. The slope of the regression line can be calculated by dividing the covariance of X and Y by the variance of X.
+
+The mathematical formula to calculate slope (m) is:
+slope = covariance / variance  
+
+**Covariance**: a measure of how much two variables change with respect to one another.
+
+The mathematical formula to calculate covariance is: 
+covariance = mean(x*y) - mean(x) * mean(y) 
+
+**Variance**: a statistic used to describe the spread of data about the mean.
+
+The mathematical formula to calculate variance is: 
+variance = mean( x^2) - mean (x)^2  
+
+**Y-intercept**: the point at which a line crosses the Y-axis.
+
+The formula to calculate intercept (c) is: 
+c = mean(y) – mean(x) * m  
+
+Check the video link below for more information on the equation and derivation.
+
+https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/more-on-regression/v/covariance-and-the-regression-line
+
+Now, let’s write a function for intercept and slope (coefficient):
