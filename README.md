@@ -195,7 +195,7 @@ Final fit using the custom built model
 
 #### Note
 
-The abob method of using all the data set during each iteration is called batch gradient descent. There is alternative faster appraoch where only random part of the data set is used in each iteration and it is called stostatic gradient descent.
+The above mentioned method of using all the data set during each iteration is called batch gradient descent. There is alternative faster appraoch where only random subset of the data is used in each iteration and it is called stostatic gradient descent.
 
 ## Conclusion
 
