@@ -16,8 +16,8 @@ Let's begin by find a new relation, I mean a linear relationship between our bel
 
 We will look at 2 approachs to finding a regression line.
 
---  using equations
---  using gradient descent
+- using equations
+- using gradient descent
 
 ## Lieutenant Commander Data
 
