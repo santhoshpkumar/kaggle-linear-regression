@@ -14,6 +14,11 @@ Using this dataset we will now implement the simple linear regression algorithm 
 
 Let's begin by find a new relation, I mean a linear relationship between our beloved X and Y. We want to find a straight line relationship between the X (independent variable) and Y (dependent variable). This is called simple linear regression where we are trying to find what linear combination of X (input) will produce Y (output) 
 
+We will look at 2 approachs to finding a regression line.
+
+--  using equations
+--  using gradient descent
+
 ## Lieutenant Commander Data
 
 <img src="./images/star-trek-discovery-brent-spiner-data.jpg" width="200">
@@ -26,9 +31,11 @@ Our aim is to find a straight line that connects all the data point.
 
 <img src="./images/star-trek-discovery-brent-spiner-data.gif" width="200"> Straight line you say?
 
-Well intuitively you can see that it is <img src="./images/mission-impossible.jpg" height="60" width="100">  to find a straight line that goes through all the points. We will find a approximate line that is representative of all the points hugging the line.
+Well intuitively you can see that it is <img src="./images/mission-impossible.jpg" height="50" width="100">  to find a straight line that goes through all the points. We will find a approximate line that is representative of all the points hugging the line.
 
 <img src="./images/train_fit.png" width="1000">
+
+## Statistical Equations
 
 Let's begin with the equation of a straight line.
 
@@ -85,7 +92,7 @@ Pictorial comparision of Y values in test and the Predicted values
 <img src="./images/test_original.png" >
 <img src="./images/predict.png" >
 
-## Evaulation
+### Evaulation
 
 Now that we have a model, we need a way evaualte or read the model. 
 
@@ -119,3 +126,85 @@ As you can see from the graph below, the regression line predicatd using our cus
 https://github.com/santhoshpkumar/understanding-linear-regression
 
 <img src="./images/compare.png" >
+
+## Gradient Descent
+
+While the equation mention and the inverse matrix equation menthod can be used to calcualte the co-efficient they tend to become inefficient as the number of independent variables increases. As the number of features used in regression increases, the matrix operations required by the closed-form solution become computationaly expensive, if not impossible. The computational complexity for the closed-from solution is of the order
+ 
+$$ O(n^3) $$
+
+A most effecitve way to calculate the regression line would be using a menthod called gradient descent. I will not be covering details of the gradient descent but will hightlight the logic and the algorithm used to obtain a regression line.
+
+<img src="./images/gradient.png" >
+To begin with imagine, we started with a random line, we  will calcuate a error metrics which will tell us how good or bad the line fit is. We then make gradual adjustments to the line co-efficient iteratively until we arrive at a more acceptable solution.
+
+The cost function we will use it the residual sum of squares (RSS) 
+
+Along with the cost funciton we will be using a **hyper parameter** to arrive at the solution. This hyper parameter is called the learning rate (alpha)
+
+#### The algorithm
+
+```
+initialize coefficients
+
+while gradient_magnitude >= tolerance:
+    for each feature:
+        updated_feature_coefficient = feature_coefficient - alpha*feature_derivative
+return coefficients
+```
+
+Imagine the sample data from before. Lets pick a random line. 
+
+<img src="./images/grad_fit_1.png" >
+
+Our cost function is defined as 
+$$ RSS = (np.dot(fs, ws) - ys)^2 $$
+
+Our gradient is derivate of cost function. 
+
+so differentiation of cost function = (np.dot(fs, ws) - ys)^2 with respect to ws will give
+
+$$ dw=2 *(np.dot(fs,ws) - ys)fs $$
+
+for M examples, we have
+
+$$ dw = 2 (np.dot(fs,ws) - ys)fs/(2M) $$
+
+$$ dw = 2(diffs)fs/(2M) $$
+
+$$ dw = diffs * fs/M $$
+
+$$ np.dot(fs_transposed, diffs)/num_examples $$
+
+We will iterate as indicated in the algorithm and arrive at the final weights (co-efficients) which can be used to predict for a new unseen data
+
+<img src="./images/grad_fit.gif" >
+
+### Model
+
+<img src="./images/gradent_descent_model.png" >
+
+### Usage
+
+<img src="./images/gradent_descent_model_usage.png" >
+
+Final fit using the custom built model
+
+<img src="./images/test_gradient_fit.png" >
+
+#### Note
+
+The abob method of using all the data set during each iteration is called batch gradient descent. There is alternative faster appraoch where only random part of the data set is used in each iteration and it is called stostatic gradient descent.
+
+## Conclusion
+
+We evaulated equations and gradient descent to find the best fit regression line.
+
+The concpet can be furthur extended to multiple indepedent variable. To begin with the intuition, if we have 2 independent variables then a data point can be represented using the 3-axis  x, y and z 
+
+<img src="./images/3dscatterplot.jpg" width="300 ">
+
+As you might have guessed, the result or the predication is no longer on a straght line, rather a 2-dimensional plane.
+
+This can be genralized saying that given a **n-dimension hyper space** the result lies on a **(n-1)-dimesnion hyper plane**
+ 
