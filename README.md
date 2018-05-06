@@ -131,7 +131,7 @@ https://github.com/santhoshpkumar/understanding-linear-regression
 
 While the equation mention and the inverse matrix equation menthod can be used to calcualte the co-efficient they tend to become inefficient as the number of independent variables increases. As the number of features used in regression increases, the matrix operations required by the closed-form solution become computationaly expensive, if not impossible. The computational complexity for the closed-from solution is of the order
  
-$$ O(n^3) $$
+O(n^3) 
 
 A most effecitve way to calculate the regression line would be using a menthod called gradient descent. I will not be covering details of the gradient descent but will hightlight the logic and the algorithm used to obtain a regression line.
 
@@ -158,23 +158,24 @@ Imagine the sample data from before. Lets pick a random line.
 <img src="./images/grad_fit_1.png" >
 
 Our cost function is defined as 
-$$ RSS = (np.dot(fs, ws) - ys)^2 $$
+
+RSS = (np.dot(fs, ws) - ys)^2 
 
 Our gradient is derivate of cost function. 
 
 so differentiation of cost function = (np.dot(fs, ws) - ys)^2 with respect to ws will give
 
-$$ dw=2 *(np.dot(fs,ws) - ys)fs $$
+dw=2 *(np.dot(fs,ws) - ys)fs 
 
 for M examples, we have
 
-$$ dw = 2 (np.dot(fs,ws) - ys)fs/(2M) $$
+dw = 2 (np.dot(fs,ws) - ys)fs/(2M) 
 
-$$ dw = 2(diffs)fs/(2M) $$
+dw = 2(diffs)fs/(2M) 
 
-$$ dw = diffs * fs/M $$
+dw = diffs * fs/M 
 
-$$ np.dot(fs_transposed, diffs)/num_examples $$
+np.dot(fs_transposed, diffs)/num_examples 
 
 We will iterate as indicated in the algorithm and arrive at the final weights (co-efficients) which can be used to predict for a new unseen data
 
